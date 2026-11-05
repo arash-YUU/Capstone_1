@@ -23,3 +23,4 @@ For my first capstone, I am analyzing sales data for EmporiUm. I was assigned Fl
 
 ## Project Files
 - akrami_sales_analysis.sql - SQL queries for the six questions.
+- akrami_territory_chart.xlsx - Excel PivotChart showing revenue by Florida store.
