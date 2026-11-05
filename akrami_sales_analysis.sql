@@ -58,6 +58,15 @@ GROUP BY
     ORDER BY Sales_Year, Sales_Month; 
 
 -- Can you provide a ranking of in-store sales performance by each store in the sales territory, or a ranking of online sales performance by state within an online sales territory?  
+SELECT 
+	l.StoreId,
+    l.StoreLocation, 
+    SUM(s.Sale_Amount) AS Total_Revenue 
+FROM store_sales AS s 
+JOIN store_locations AS l ON s.Store_ID = l.StoreId 
+WHERE l.State = 'Florida' 
+GROUP BY l.StoreId, l.StoreLocation 
+ORDER BY Total_Revenue DESC; 
 
-
+-- What is your recommendation for where to focus sales attention in the next quarter? 
  
