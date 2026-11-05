@@ -66,7 +66,7 @@ FROM store_sales AS s
 JOIN store_locations AS l ON s.Store_ID = l.StoreId 
 WHERE l.State = 'Florida' 
 GROUP BY l.StoreId, l.StoreLocation 
-ORDER BY Total_Revenue DESC; 
+ORDER BY Total_Revenue DESC
 
 -- What is your recommendation for where to focus sales attention in the next quarter? 
  
