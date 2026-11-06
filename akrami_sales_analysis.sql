@@ -1,3 +1,5 @@
+-- Sales territory: Florida
+-- Region: South
 USE sample_sales;  
 
 -- What is total revenue overall for sales in the assigned territory, plus the start date and end date that tell you what period the data covers?  
@@ -63,7 +65,7 @@ FROM store_sales AS s
 JOIN store_locations AS l ON s.Store_ID = l.StoreId 
 WHERE l.State = 'Florida' 
 GROUP BY l.StoreId, l.StoreLocation 
-ORDER BY Total_Revenue DESC
+ORDER BY Total_Revenue DESC;
 
 -- What is your recommendation for where to focus sales attention in the next quarter? 
  /* 
